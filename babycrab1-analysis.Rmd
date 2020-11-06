@@ -1,0 +1,44 @@
+---
+title: "Baby Crabs Analysis -- R Notebook"
+output: html_notebook
+---
+
+## Introduction 
+
+These data are from my dissertation chapter on ontogenetic scaling of the Oregon crab *Hemigrapsus oregonensis*. 
+
+
+## Data 
+
+We'll load the data here from the csv file:
+
+```{r}
+crabs<-read.csv("babycrab1.csv", header = TRUE, skip = 1)
+crabs<-crabs[,1:13]
+```
+
+The carapace size range (in mm) is: 
+
+```{r}
+range(crabs$size..mm.)
+```
+
+## Results 
+
+We want to check to see if various measurements scale allometrically with carapace size. So first we'll plot hair diameter against carapace width: 
+
+```{r}
+plot(crabs$log.size,log(crabs$Hair.diameter),
+     xlab = "log hair diameter (m)", ylab = "log carapace width (m)",
+     pch = 19, col = "blue")
+```
+Run a linear model on the data: 
+```{r}
+hairdia.model <- lm(log(crabs$Hair.diameter)~crabs$log.size)
+summary(hairdia.model)
+```
+## Discussion
+
+So in conclusion, hair diameter scales allometrically with body size, and the slope is 0.28. 
+
+The end.

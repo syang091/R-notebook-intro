@@ -1,0 +1,53 @@
+---
+title: "Sample R Notebook: Getting Started!"
+output: html_notebook
+---
+
+# Getting Started with R Markdown 
+
+Markdown, in general, is a simplified formatting language designed to easily created documentation pages that can be easily converted to display on the internet (in html format) or in other common report formats (MS Word documents, PDFs, presentation slides). It's easy to learn, easy to implement, and produces professional-looking reports for your data analysis.
+
+At the base of markdown is the idea of ``literate programming'', or the idea that code producing results should be embedded in a human-readable explanation of each step of that analysis. Markdown makes it easy to embed code directly into a document, therefore making your analysis fully understandable and reproducible.
+
+R Markdown is a special type of markdown that is designed to work specifically with R and RStudio. You can install R Markdown by running the following bit of code: 
+
+```{r}
+install.packages("rmarkdown")
+```
+
+Note that R Markdown comes pre-installed in RStudio!
+
+Load the full library by running: 
+```{r} 
+library(rmarkdown)
+```
+
+## Template instructions from RStudio:
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+## A Sample Analysis!
+
+We'll do an analysis on babycrab1.csv in lab meeting! 
+
+# Other helpful stuff
+
+## Online resources: 
+ 
+ - R Markdown Tutorial: https://rmarkdown.rstudio.com/lesson-1.html 
+ - R Markdown Guide book: https://bookdown.org/yihui/rmarkdown/
+ - See the reference guide in this directory by RStudio: rmarkdown-reference.pdf
+ - See the Cheat Sheet by R Markdown in this directory: rmarkdown-cheatsheet-2.0.pdf 
+ - 

@@ -4,5 +4,5 @@ This is a small repository for introducing RStudio and R Markdown notebooks to m
 
 Please note that the reference guide and cheat sheets are not my work, but originally from: 
 
- - Cheat Sheet 2.0: https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf?_ga=2.219214608.841012667.1604691073-1218962758.1563234696
+ - Cheat Sheet 2.0: https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf
  - R Markdown Reference Guide: https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf 
